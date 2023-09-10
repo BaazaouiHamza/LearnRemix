@@ -4,7 +4,6 @@ import styles from './NewNote.css';
 function NewNote() {
   const navigation = useNavigation()
   const data = useActionData()
-  console.log("actionData",data)
 
   const isSubmitting = navigation.state === 'submitting'
   return (
