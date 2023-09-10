@@ -45,6 +45,11 @@ export function links() {
     return [...newNotesLinks(), ...noteListLinks()]
 }
 
+export function meta() {
+    return [{title: 'All Notes'},
+        {description: 'Manage your notes with ease.'}]
+}
+
 export function ErrorBoundary() {
     const error = useRouteError()
     if (isRouteErrorResponse(error)) {
